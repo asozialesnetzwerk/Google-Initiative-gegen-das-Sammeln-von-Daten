@@ -17,8 +17,17 @@
             margin: 4px 2px;
             cursor: pointer;
         }
-        label {
+        label, .block {
             display: block;
+            margin-bottom: 1em;
+            -webkit-user-select: none;  
+            -moz-user-select: none;    
+            -ms-user-select: none;      
+            user-select: none;
+        }
+        .inner {
+            margin-bottom: 1px;
+            margin-left: 1.5em;
         }
     </style>
 </head>
@@ -29,77 +38,58 @@
     <label>Name*
         <input type="text">
     </label>
-    <br>
     <label>Vorname*
         <input type="text">
     </label>
-    <br>
     <label>Telefonnummer*
         <input type="text">
     </label>
-    <br>
     <label>Mobilnummer*
         <input type="text">
     </label>
-    <br>
     <label>Adresse*
         <input type="text">
     </label>
-    <br>
     <label>Frühere Adressen*
         <input type="text">
     </label>
-    <br>
     <label>Alter*
         <input type="text">
     </label>
-    <br>
     <label>Beruf*
         <input type="text">
     </label>
-    <br>
     <label>Hobbys*
         <input type="text">
     </label>
-    <br>
     <label>Kontoverbindung*
         <input type="text">
     </label>
-    <br>
     <label>PIN*
         <input type="text">
     </label>
     <label>SCHUFA-Rating*
         <input type="text">
     </label>
-    <br>
     <label>Kosename des Partners, der Partnerin*
         <input type="text">
     </label>
-    <br>
     <label>Sexuelle Vorlieben*
         <input type="text">
     </label>
-    <br>
-    <br>
-    <div style="display: block">
-        Politische Grundhaltung*
-        <label><input type="radio" name="politische-haltung"/>links</label>
-        <label><input type="radio" name="politische-haltung"/>mitte</label>
-        <label><input type="radio" name="politische-haltung"/>rechts</label>
+    <div class="block">Politische Grundhaltung*
+        <label class="inner"><input type="radio" name="politische-haltung"/>links</label>
+        <label class="inner"><input type="radio" name="politische-haltung"/>mitte</label>
+        <label class="inner"><input type="radio" name="politische-haltung"/>rechts</label>
     </div>
-    <br>
-    <div style="display: block">
-        Mitglied einer terroristischen Vereinigung*
-        <label>
-            <input type="radio" name="terror-vereinigung"/>Ja, bei <input type="text"></label>
-        <label><input type="radio" name="terror-vereinigung"/>Nein</label>
-        <label><input type="radio" name="terror-vereinigung"/>Vielleicht</label>
+    <div class="block">Mitglied einer terroristischen Vereinigung*
+        <label class="inner"><input type="radio" name="terror-vereinigung"/>Ja, bei <input type="text"></label>
+        <label class="inner"><input type="radio" name="terror-vereinigung"/>Nein</label>
+        <label class="inner"><input type="radio" name="terror-vereinigung"/>Vielleicht</label>
     </div>
 
     <label>Vollständigen Lebenslauf(inkl. Praktika und Auslandsaufenthalte) bitte anhängen
-        <br>
-        <input type="file">
+        <input style="display: block" type="file">
     </label>
     <br>
     <a href="result.html" class="button">Submit</a>
